@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catch Cute Animals</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui">
+  <div class="info">
+    <span>Score: <span id="score">0</span></span>
+    <span>Target: <span id="target">0</span></span>
+    <span>Alien: <span id="alienCount">0</span>/5</span>
+    <button id="pauseBtn">⏸</button>
+  </div>
+</div>
+
+<div id="welcomeScreen">
+  <button id="startBtn">PLAY</button>
+  <p class="welcomeText">
+    Welcome, enjoy the game.<br>
+    This game was made by mipu
+  </p>
+</div>
+
+<div id="pauseScreen" class="overlay hidden">
+  <div class="popup">
+    <h2>GAME PAUSED</h2>
+    <button id="continueBtn">▶ CONTINUE</button>
+  </div>
+</div>
+
+<div id="endScreen" class="overlay hidden">
+  <div class="popup">
+    <h2 id="endMessage"></h2>
+    <button id="restartBtn">⟳</button>
+  </div>
+</div>
+
+<div id="gameArea">
+  <img id="basket" src="Screenshot_2026-03-03_112835-removebg-preview.png">
+</div>
+
+<audio id="startSound" src="universfield-video-game-bonus-323603.mp3"></audio>
+<audio id="wrongSound" src="amaze98-reject-interface-sound-201948.mp3"></audio>
+<audio id="winSound" src="floraphonic-you-win-sequence-2-183949.mp3"></audio>
+<audio id="loseSound" src="freesound_community-080205_life-lost-game-over-89697.mp3"></audio>
+<audio id="bgm" src="WhatsApp Video 2026-03-03 at 14.32.18.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
